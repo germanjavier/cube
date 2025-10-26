@@ -1,0 +1,17 @@
+{
+  "name": "the-cube",
+  "version": "1.0.0",
+  "description": "A 3D Rubik's Cube game PWA",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server dist -p 3000 -o",
+    "generate-icons": "node generate-icons.js",
+    "postinstall": "npm run generate-icons"
+  },
+  "dependencies": {
+    "sharp": "^0.33.2"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
